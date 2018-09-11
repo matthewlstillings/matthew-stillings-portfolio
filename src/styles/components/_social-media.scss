@@ -1,0 +1,99 @@
+.social-media-bar {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    max-width: 1010px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.social-media__title {
+    cursor: pointer;
+    margin: 0 1rem 0 0;
+    position: relative;
+    -webkit-transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: -2;
+}
+
+.social-media__title.is-shrunk {
+    margin: 0 0 0 0;
+    height: 0;
+    overflow: hidden;
+    width: 0px;
+}
+
+.social-media__links-container {
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: width .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: width .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: width .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    max-width: 40px;
+    width: 10%;
+}
+
+.social-media-bar__contact__link {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 40px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    pointer-events: none;
+    width: 25%;
+}
+
+.link-text {
+    -webkit-transition: visibility .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: visibility .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: visibility .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    visibility: hidden;
+}
+
+.is-twitter {
+    background: $twitter-blue;
+}
+
+.is-email {
+    background: $google-red;
+}
+
+.is-linkedin {
+    background: $linkedIn-blue;
+}
+
+.is-github {
+    background: $github-purple;
+}
+
+
+///Expanded Modifiers 
+
+.social-media__links-container.is-expanded {
+    max-width: none;
+    width: 100%;
+}
+
+.social-media-bar__contact__link.is-expanded {
+    pointer-events: auto;
+}
+
+.link-text.is-expanded {
+   visibility: visible;
+}

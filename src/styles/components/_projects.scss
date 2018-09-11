@@ -1,0 +1,117 @@
+//Mobile Projects View
+
+.mobile-projects {
+    margin: 6rem 0 0;
+}
+
+.mobile-projects__container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.projects__title {
+    font-weight: 600;
+    margin: 1rem auto;
+    text-align: center;
+    width: 100%;
+}
+
+.project {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    padding: 0 0 2rem;
+    width: 93.5%;
+}
+
+.project__image {
+    margin: 0 auto;
+    width:100%;
+}
+
+
+.project__info {
+    border-bottom: 2px solid white;
+    opacity: 1;
+    position: relative;
+    padding: 1rem 0 3rem 0rem;
+    text-align: left;
+    width: 100%;
+}
+
+
+.project__info.display-info {
+    display: block;
+    opacity: 1;
+    margin: 4rem 0 0 0;
+    height: 170px;
+    text-align: left;
+}
+
+.project__info__name {
+    color: $primary;
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+
+.project__info__description {
+    font-size: 1rem; 
+    font-weight: 200;
+    max-width: 75%;
+}
+
+.project__info__link {
+    color: white;
+    text-decoration: none;
+    margin: 0rem auto 0; 
+}
+
+.project__info__link--text {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: $emphasis-green;
+    padding: 1rem;
+    text-decoration: none; 
+    -webkit-transition: background-color .4s ease-out; 
+    -o-transition: background-color .4s ease-out; 
+    transition: background-color .4s ease-out;
+    width: 5.32rem;
+}
+
+.project__info__link--text:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+
+//Projects Responsive
+
+
+@media (min-width: $tablet-vertical) {
+    .project__info {
+        .project__info__name {
+            font-size: 3rem;
+        }
+        .project__info__description {
+            font-size: 1.2rem;
+        }
+        .project__info__link--text { 
+            font-size: 1.2rem;
+            padding: 1.2rem;
+            width: 6rem;
+        }
+    }
+}
+

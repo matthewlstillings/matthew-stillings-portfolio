@@ -1,0 +1,97 @@
+.intro-bar {
+    margin: auto;
+    width: 95%;
+}
+
+.intro-bar__container {
+    margin: 0rem auto .5rem;
+    padding: .8rem 0 0;
+}
+
+.intro-bar__hello {
+    font-weight: 700;
+    margin: 3rem 1rem 2rem;
+    font-size: 5rem;
+}
+
+.intro-bar__description {
+    font-weight: 300;
+    font-size: 1.4rem;
+    margin: .5rem 1rem 3rem;
+    max-width: 42.5rem;
+    .is-green {
+        color: $emphasis-green;
+    }
+}
+
+.intro-bar__tagline {
+    margin: .5rem auto 2rem;
+}
+
+.intro-bar__contact-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.1rem;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin: -1.3rem auto;
+    max-width: 300px;
+    width: 80%;
+}
+
+.intro-bar__contact__link {
+    &.is-email {
+        color: $google-red;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    &.is-twitter{
+        color: $twitter-blue
+    }
+    &.is-linkedin {
+        color: $linkedIn-blue;
+    }
+    &.is-github{
+        color: $github-purple;
+    }
+}
+
+.email-address {
+    opacity: 0;
+}
+
+.email-address.display {
+    opacity: 1;
+}
+
+//introBar Responsive 
+
+@media (min-width: $tablet-vertical) {
+   .intro-bar {
+       -webkit-box-align: center;
+           -ms-flex-align: center;
+               align-items: center;
+       display: -webkit-box;
+       display: -ms-flexbox;
+       display: flex;
+       -webkit-box-pack: center;
+           -ms-flex-pack: center;
+               justify-content: center;
+   }
+   .intro-bar__container {
+       width: 100%;
+    }
+    .intro-bar__contact-container {
+        width: 100%;
+    }
+    .intro-bar__hello {
+       font-size: 6.2rem; 
+    }
+    
+    .intro-bar__description {
+        font-size: 1.8rem;
+    }
+}
+

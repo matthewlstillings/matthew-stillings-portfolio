@@ -1,0 +1,20 @@
+html {
+    background-color: $background;
+}
+
+body {
+    color: $primary;
+    margin: 0 auto;
+    max-width: 1000px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+#react-root {
+    margin: 0;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+

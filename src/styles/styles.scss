@@ -1,0 +1,16 @@
+// This is the top-level scss file. Import all other files in here.
+// Base
+@import './vendor/normalize-scss-master/sass/_normalize.scss';
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:200,400,500,600,700,800,900');
+@import './base/variables.scss';
+@import './base/base.scss';
+
+//Components
+@import './components/site-content.scss';
+@import './components/intro.scss';
+@import './components/content-container.scss';
+@import './components/projects.scss';
+@import './components/footer.scss';
+@import './components/social-media.scss';
+
+

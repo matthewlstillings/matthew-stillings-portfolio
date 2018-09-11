@@ -1,0 +1,13 @@
+.content-container {
+    width: 100%;
+}
+
+//Content Responsive
+@media (min-width: $tablet-vertical) {
+    .content-container{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        min-height: 100vh;
+    }
+}
