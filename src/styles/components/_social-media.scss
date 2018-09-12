@@ -56,6 +56,7 @@
         -ms-flex-pack: center;
             justify-content: center;
     pointer-events: none;
+    transition: all .3s ease;
     width: 25%;
 }
 
@@ -68,18 +69,30 @@
 
 .is-twitter {
     background: $twitter-blue;
+    &:hover {
+        background: darken($twitter-blue, 10%)
+    }
 }
 
 .is-email {
     background: $google-red;
+    &:hover {
+        background: darken($google-red, 10%)
+    }
 }
 
 .is-linkedin {
     background: $linkedIn-blue;
+    &:hover {
+        background: darken($linkedIn-blue, 10%)
+    }
 }
 
 .is-github {
     background: $github-purple;
+    &:hover {
+        background: darken($github-purple, 10%)
+    }
 }
 
 
